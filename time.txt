@@ -1,0 +1,15 @@
+https://www.youtube.com/watch?v=tpso18ghda4
+
+5:00
+
+12:45 -> dbConfig.js
+
+24:00 -> Models
+
+29:00 -> controller
+
+44:30 -> Routes
+
+se ejecuta con >
+
+node server.js
