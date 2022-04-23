@@ -2,7 +2,7 @@ module.export = {
     HOST: 'localhost',
     USER: 'root',
     PASSWORD: '',
-    DB: '',
+    DB: 'node_sequalize_mysql',
     dialect: 'mysql',
 
     pool: {

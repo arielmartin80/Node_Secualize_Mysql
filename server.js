@@ -8,26 +8,18 @@ var corOption = {
 }
 
 
-
 // middleware
-
 app.use(cors(corOption))
-
 app.use(express.json())
-
 app.use(express.urlencoded({ extended: true }))
 
 
-
 // routers 
-
 const router = require('./routes/productRouter.js')
 app.use('/api/products', router)
 
 
-
 //testing api
-
 app.get('/', (req, res) => {
     res.json({
         message: '© Ariel Martin ®'
@@ -35,13 +27,11 @@ app.get('/', (req, res) => {
 })
 
 
-
 // port
+const PORT = process.env.PORT || 4000
 
-const PORT = process.env.PORT || 8080
 
 // server
-
 app.listen(PORT, () => {
-    console.log(`server is running port ${PORT}`)
+    console.log(`server is running in http://localhost:${PORT}`)
 })
